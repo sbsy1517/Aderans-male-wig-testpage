@@ -12757,6 +12757,9 @@ section.jumbotron.d-lg-none .carousel-inner .carousel-item #img-two-sp {
 section.jumbotron.d-lg-none .carousel-inner .carousel-item #img-three-sp {
   background-image: url(../source/default/fv/3-sp.jpg);
 }
+section.jumbotron.d-lg-none .carousel-inner .carousel-item #img-four-sp {
+  background-image: url(../source/default/fv/4-sp.jpg);
+}
 section.jumbotron.d-lg-none .carousel-inner .carousel-item .position-absolute {
   background-color: #ffffff76;
   min-height: auto;
