@@ -1,0 +1,133 @@
+section.loading
+
+    background: #fff center fixed no-repeat
+    min-height: 100%
+    width: 100%
+    z-index: 999
+    -moz-background-size: cover
+    background-size: cover
+    position: fixed
+    animation: loadingover 0.5s 4s forwards
+
+    .loadinglogo   
+        width: 11rem
+        position: absolute
+        top: 0
+        right: 0
+        bottom: 0
+        left: 0
+        margin: auto
+        animation: fadeIn 2s 1s, fadeOut 1s 3s forwards
+        opacity: 0
+        z-index: 1
+        vertical-align: middle
+        border-style: none
+
+@media screen and (min-width: 840px)
+  .reserved
+    position: fixed
+    bottom: 20px
+    right: 40px
+    z-index: 999
+    width: 12%
+
+  .voicepc
+    margin-top: 70px
+
+@media screen and (min-width: 200px) and (max-width: 840px)
+  .reserved
+    position: fixed
+    bottom: 10px
+    right: 10px
+    z-index: 999
+    width: 35%
+
+  .voicesp
+    margin-top: 30px
+
+  .spnone
+    display: none
+
+.navcolor
+  font-weight: 100
+
+  &:hover
+    opacity: 0.7
+    font-weight: 500
+
+.loading
+  background: #fff center fixed no-repeat
+  min-height: 100%
+  width: 100%
+  z-index: 999
+  -moz-background-size: cover
+  background-size: cover
+  position: fixed
+  animation: loadingover 0.5s 4s forwards
+
+.loadinglogo
+  width: 11rem
+  position: absolute
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  margin: auto
+  animation: fadeIn 2s 1s, fadeOut 1s 3s forwards
+  opacity: 0
+
+@keyframes fadeIn
+  from
+    opacity: 0
+
+  to
+    opacity: 5
+
+@keyframes fadeOut
+  from
+    opacity: 1
+
+  to
+    opacity: 0
+    z-index: -99
+
+@keyframes loadingover
+  from
+    opacity: 1
+
+  to
+    opacity: 0
+    z-index: -99
+
+.line
+  height: 8px
+  width: 100px
+  background: #bdbdbd
+  border-radius: 30px
+
+.engtext
+  letter-spacing: 0px
+  font-size: 1.3rem
+  margin-left: 20px
+  color: #bdbdbd
+
+.textspace
+  letter-spacing: 5px
+
+.dark-gray
+  color: #4f4f4f
+
+.button_hover:hover
+  box-shadow: 7px 7px 0px #7a7a7a
+  transition: all 0.5s
+
+.usertext
+  line-height: 35px
+
+.ex5-box
+  display: flex
+  align-items: center
+  justify-content: center
+
+.center
+  text-align: center

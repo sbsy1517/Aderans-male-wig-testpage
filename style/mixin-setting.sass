@@ -1,0 +1,255 @@
+*
+    position: relative
+    word-spacing: 2px
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap')
+
+html,body
+    // border: 1px solid #000
+    font-family: 'Roboto', sans-serif,'Noto Sans JP', sans-serif, 'Noto Serif JP', serif
+
+@mixin center
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%, -50%)
+@mixin y-center
+    top: 50%
+    transform: translateY(-50%)
+@mixin x-center
+    left: 50%
+    transform: translateX(-50%)
+
+@mixin xl
+    @media (max-width: 1200px)
+        @content
+@mixin lg
+    @media (max-width: 992px)
+        @content
+@mixin md
+    @media (max-width: 768px)
+        @content
+@mixin sm
+    @media (max-width: 576px)
+        @content
+@mixin xs
+    @media (max-width: 414px)
+        @content
+
+
+a,ul,li
+    text-decoration: none
+    list-style-type: none
+
+
+
+
+@mixin intro
+    .intro
+        padding-top: 100px
+        +lg
+            padding-top: 80px
+        +md
+            padding-top: 50px
+        .title
+            h3
+                font-size: 40px
+                font-family: 'Noto Sans JP', sans-serif
+                font-weight: bold
+                +lg
+                    text-align: center
+                    font-size: 38px
+                +md
+                    font-size: 30px
+                +sm
+                    font-size: 25px
+                span
+                    font-size: 30px
+                    padding-left: 10px
+                    font-family: 'Roboto', sans-serif
+                    font-weight: 300
+                
+            p.d-block.d-lg-none.text-center
+                margin: 0
+                line-height: 1
+                white-space: normal 
+                
+                +sm
+                    font-size: 15px
+        .line
+            width: 80px
+            height: 8px
+            background-color: $color-pink
+            margin: 15px 0 
+            +lg
+                margin: 15px auto
+                height: 6px
+        p
+            font-size: 23px
+            letter-spacing: 2px
+            margin-top: 8px
+            line-height: 2
+            color: $color_grey
+            white-space: pre-wrap
+            font-family: 'Roboto', sans-serif
+            font-weight: light
+            +lg
+                font-size: 20px
+            +md
+                font-size: 18px
+                letter-spacing: 1px
+            +sm
+                font-size: 16px
+                line-height: 1.6
+    #intro-comarison,#intro-cus
+        padding-top: 150px
+        +lg
+            padding-top: 130px
+        +md
+            padding-top: 100px
+    #intro-qa
+        padding-top: 170px
+        +lg
+            padding-top: 150px
+        +md
+            padding-top: 120px
+
+
+@mixin img-carousel
+    .img-carousel#com
+        margin-top: 20px
+        margin-bottom: 0px
+    .img-carousel
+             
+        margin-top: 100px
+        margin-bottom: 130px 
+        +lg
+            margin-top: 60px
+            margin-bottom: 100px
+        +sm
+            margin: 40px 0 60px
+             
+        
+        .carousel#intro-wig,.carousel#intro-com
+            .carousel-indicators
+                bottom: -50px
+                // background-color: $color_grey
+                +lg 
+                    bottom: -45px
+                button
+                    width: 20px
+                    height: 20px
+                    margin: 0 10px
+                    border-radius: 10px
+                    background-clip: border-box
+                    border: none 
+                    background-color: transparent
+                    border: 1px solid #000
+                    +lg
+                        width: 15px
+                        height: 15px
+                        margin: 0 8px
+                    +sm
+                        width: 10px
+                        height: 10px
+                button.active
+                    background-color: $color_pink
+                    border: 1px solid $color_pink
+            .carousel-inner
+                .carousel-item
+                    h4
+                        top: 40px
+                        left: 40px   
+                        padding: 20px 40px
+                        background-color: #ffffffc6
+                        font-size: 30px
+                        letter-spacing: 5px          
+                        color: $color_grey   
+                        +lg
+                            font-size: 25px
+                            padding: 10px 30px
+                            top: 30px
+                            left: 30px
+                            letter-spacing: 3px
+                        +sm
+                            font-size: 20px
+                            padding: 10px 15px
+                            top: 10px
+                            left: 10px
+                            letter-spacing: 1px
+                    
+                    .carousel-caption
+                        color: transparent
+                        padding: 40px 
+                        font-size: 25px
+                        letter-spacing: 2px
+                        width: 100%
+                        left: 0
+                        bottom: 0
+                        transition-duration: 0.3s  
+                        line-height: 2
+                        text-align: left
+                        +lg
+                            background-color: #ffffffaf 
+                            color: $color_dkGrey
+                            font-size: 25px
+                            padding: 25px 
+                            letter-spacing: 1px
+                        
+                            p
+                                margin: 0
+                        +md
+                            font-size: 20px
+                            padding: 23px 8px
+                            letter-spacing: normal
+                        +sm
+                            font-size: 15px
+                            letter-spacing: 1px
+                            padding: 20px 8px
+                            line-height: 25px
+                                
+                            
+            &:hover
+                .carousel-inner
+                    .carousel-item
+                        .carousel-caption
+                            color: $color_dkGrey
+                            background-color: #ffffffaf  
+                            transition-duration: 0.3s 
+            .carousel-control-prev,.carousel-control-next
+                &:hover
+                    opacity: 1
+            
+            .carousel-control-next-icon,.carousel-control-prev-icon
+                width: 80px
+                height: 80px 
+                +lg
+                    width: 60px
+                    height: 60px
+                +md
+                    width: 42px
+                    height: 42px
+            .carousel-control-next-icon
+                background-color: white
+                -webkit-mask:  url(../source/default/carousel/next.svg) no-repeat 50% 50%
+                background-image: none
+                &:hover
+                    background-color: $hover_red
+            .carousel-control-prev-icon
+                background-color: white
+                -webkit-mask:  url(../source/default/carousel/prev.svg) no-repeat 50% 50%
+                background-image: none
+                &:hover
+                    background-color: $hover_red
+    
+
+$aderans-red: #e60012
+$hover-red: #ff6f6f
+$color-pink: #ff6f6f
+$color_bgGrey: #F0F0F0
+$color-ltGrey: #a4a4a4
+$color_grey: #464646
+$color_dkGrey: #303030
+$color_iconGrey: #5f5f5f
+$color_bdGrey: #707070
+

@@ -1,0 +1,136 @@
+$bar-width: 50px
+$bar-height: 5px
+$bar-spacing: 15px
+$menu-color: #3a3a3a
+$menu-cross: #E60012
+
+
+//pc
+nav
+	transition-duration: 0.5s
+	z-index: 2 !important
+	.container
+		padding: 20px 0
+		+sm
+			padding: 20px 30px
+		a.logo
+			img
+				width: 130px
+			
+		ul	
+			padding: 0
+			margin: 0
+			li
+				margin-right: 10px
+				a
+					font-size: 18px
+					padding: 15px 15px
+					display: block
+					color: #000
+					&:hover
+						color: $hover-red
+						
+			li.signup-pc
+				margin-right: 0
+				margin-left: 10px
+				a
+					color: white
+					padding: 15px 25px
+					background-color: red
+					&:hover
+						background-color: $hover-red
+
+nav.top
+	background-color: white	
+	transition-duration: 0.5s
+	
+
+//mobile	
+.mobile-menu-btn
+	height: 40px
+	+md
+		height: 31px
+	// border: 1px solid #000
+.hamburger-menu,
+.hamburger-menu:after,
+.hamburger-menu:before 
+	width: $bar-width 
+	height: $bar-height 
+	+md
+		width: 40px
+		height: 3px
+.hamburger-menu 
+	position: relative 
+	transform: translateY($bar-spacing) 
+	background: $menu-color 
+	transition: all 0ms 300ms 
+	+md
+		transform: translateY(12px)
+	&.animate 
+		background: rgba(255, 255, 255, 0) 
+	&:before 
+		content: "" 
+		position: absolute 
+		left: 0 
+		bottom: $bar-spacing 
+		background: $menu-color
+		transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1) 
+		+md
+			bottom: 12px
+	&:after 
+		content: "" 
+		position: absolute 
+		left: 0 
+		top: $bar-spacing 
+		background: $menu-color 
+		transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1) 
+		+md
+			top: 12px
+	&.animate 
+		&:after 
+			top: 0 
+			transform: rotate(45deg) 
+			transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1) 
+			background: $menu-cross
+		&:before 
+			bottom: 0 
+			transform: rotate(-45deg) 
+			transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1) 
+			background: $menu-cross
+
+.mobile-menu
+	transform: translateY(-600px)
+	transition-duration: 0.5s
+	opacity: 0
+	a
+		padding: 10px 0px
+		font-size: 25px
+		color: black
+		border: 1px solid #f2f2f2
+		box-sizing: border-box
+		font-family: 'Noto Sans JP', sans-serif
+		&:hover
+			color: white
+			background-color: $hover-red
+			border: 1px solid $hover-red
+	a.signup-sp
+		background-color: red
+		color: #ffffff
+		border: 1px solid #e60012
+		&:hover
+			background-color: $hover-red
+			border: 1px solid #ff6f6f
+.mobile-menu.open
+	transform: translateY(0)
+	transition-duration: 0.5s
+	z-index: -1
+	opacity: 1
+	background-color: #fff
+.mobile-top
+	background-color: #fff
+.fixed-top
+	+lg
+		background-color: #fff
+		box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2)
+  	
+		
