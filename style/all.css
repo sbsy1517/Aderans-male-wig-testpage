@@ -12746,7 +12746,13 @@ section.jumbotron .carousel-inner .carousel-item .position-absolute h1 {
 }
 
 section.jumbotron.d-lg-none .carousel-inner .carousel-item .img {
-  min-height: 400px;
+  height: 600px;
+  min-height: auto;
+}
+@media (max-width: 576px) {
+  section.jumbotron.d-lg-none .carousel-inner .carousel-item .img {
+    height: 400px;
+  }
 }
 section.jumbotron.d-lg-none .carousel-inner .carousel-item #img-one-sp {
   background-image: url(../source/default/fv/1-sp.jpg);
@@ -12794,10 +12800,10 @@ section.jumbotron.d-lg-none .carousel-inner .carousel-item .position-absolute h1
 @media (max-width: 576px) {
   section.jumbotron.d-lg-none .carousel-inner .carousel-item .position-absolute {
     bottom: 50px;
-    padding: 15px 30px;
+    padding: 12px 20px;
   }
   section.jumbotron.d-lg-none .carousel-inner .carousel-item .position-absolute h1 {
-    font-size: 25px;
+    font-size: 22px;
     letter-spacing: 2px;
   }
 }
@@ -12961,6 +12967,7 @@ section#introduction .img-carousel {
   }
 }
 section#introduction .img-carousel .carousel#intro-wig .carousel-indicators, section#introduction .img-carousel .carousel#intro-com .carousel-indicators {
+  z-index: 1;
   bottom: -50px;
 }
 @media (max-width: 992px) {
@@ -13420,6 +13427,7 @@ section#comparison .img-carousel {
   }
 }
 section#comparison .img-carousel .carousel#intro-wig .carousel-indicators, section#comparison .img-carousel .carousel#intro-com .carousel-indicators {
+  z-index: 1;
   bottom: -50px;
 }
 @media (max-width: 992px) {

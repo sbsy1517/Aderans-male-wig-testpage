@@ -44,7 +44,10 @@ section.jumbotron.d-lg-none
     .carousel-inner
         .carousel-item
             .img
-                min-height: 400px
+                height: 600px
+                min-height: auto
+                +sm
+                    height: 400px
             #img-one-sp
                 background-image: url(../source/default/fv/1-sp.jpg)
             #img-two-sp
@@ -81,9 +84,9 @@ section.jumbotron.d-lg-none
                         letter-spacing: 3px
                 +sm
                     bottom: 50px
-                    padding: 15px 30px
+                    padding: 12px 20px
                     h1
-                        font-size: 25px
+                        font-size: 22px
                         letter-spacing: 2px
 
 section#introduction
