@@ -12747,7 +12747,7 @@ section.jumbotron .carousel-inner .carousel-item .position-absolute h1 {
 section.jumbotron.d-lg-none .carousel-inner .carousel-item .img {
   height: 600px;
   min-height: auto;
-  background-position: left 50px;
+  background-position: left 52px;
 }
 @media (max-width: 576px) {
   section.jumbotron.d-lg-none .carousel-inner .carousel-item .img {
