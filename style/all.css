@@ -12713,7 +12713,6 @@ section.jumbotron .carousel-inner .carousel-item #img-two-pc {
 }
 section.jumbotron .carousel-inner .carousel-item #img-three-pc {
   background-image: url(../source/default/fv/3.jpg);
-  background-position: left -100px;
 }
 section.jumbotron .carousel-inner .carousel-item #img-four-pc {
   background-image: url(../source/default/fv/4.jpg);
@@ -12748,6 +12747,7 @@ section.jumbotron .carousel-inner .carousel-item .position-absolute h1 {
 section.jumbotron.d-lg-none .carousel-inner .carousel-item .img {
   height: 600px;
   min-height: auto;
+  background-position: left 50px;
 }
 @media (max-width: 576px) {
   section.jumbotron.d-lg-none .carousel-inner .carousel-item .img {
