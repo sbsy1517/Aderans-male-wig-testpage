@@ -12731,7 +12731,7 @@ section.jumbotron .carousel-inner .carousel-item .position-absolute h1 {
           transform: translateY(-10%);
   display: inline-block;
   position: absolute;
-  right: 150px;
+  right: 200px;
   line-height: 1.8;
   letter-spacing: 5px;
   font-size: 50px;
@@ -12741,6 +12741,7 @@ section.jumbotron .carousel-inner .carousel-item .position-absolute h1 {
 @media (max-width: 1200px) {
   section.jumbotron .carousel-inner .carousel-item .position-absolute h1 {
     font-size: 40px;
+    right: 160px;
   }
 }
 
