@@ -21,6 +21,10 @@ html(lang="zh-Hant-TW")
         //- End og-setting
 
         //- css 
+        link(rel='preconnect' href='https://fonts.googleapis.com')
+        link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+        link(href='https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Noto+Serif+TC:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap' rel='stylesheet')
+
         link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css")
         link(rel="stylesheet", href="style/all.css")
         //- End css
@@ -54,10 +58,10 @@ html(lang="zh-Hant-TW")
         nav.fixed-top 
             .container.d-flex.justify-content-between.align-items-center
                 a.logo.d-none.d-md-block(href="https://www.aderanstaiwan.com.tw/" target="_blank" title="前往 愛德蘭絲 台灣官網")  
-                    img(src="source/logo/index_logo.png", alt="愛德蘭斯專業假髮")
+                    img(src="source/logo/index_logo.png", alt="愛德蘭斯專業訂製假髮")
                 a.logo.d-block.d-md-none(href="https://www.aderanstaiwan.com.tw/sp/" target="_blank" title="前往 愛德蘭絲 台灣官網") 
-                    img(src="source/logo/index_logo.png", alt="愛德蘭斯專業假髮")
-                ul.d-none.d-lg-flex.justify-content-between
+                    img(src="source/logo/index_logo.png", alt="愛德蘭斯專業訂製假髮")
+                ul.d-none.d-lg-flex.justify-content-between.align-items-center
                     li 
                         a(href="#firstView" title="回到頂端")  TOP 
                     li 
@@ -83,7 +87,7 @@ html(lang="zh-Hant-TW")
                 
         //- loading 
         section.loading
-            img.loadinglogo(src="source/logo/index_logo.png", alt="愛德蘭斯專業假髮")
+            img.loadinglogo(src="source/logo/index_logo.png", alt="愛德蘭斯專業訂製假髮")
         //- End nav
 
         //- FV
@@ -123,27 +127,27 @@ html(lang="zh-Hant-TW")
                 .carousel-item.active(data-bs-interval="5000") 
                     .img#img-one-sp
                     .position-absolute
-                        h1 愛德蘭絲假髮
+                        h1 愛德蘭絲
                             br
-                            | 全球第一假髮品牌
+                            | 專業訂製假髮
                 .carousel-item(data-bs-interval="5000") 
                     .img#img-two-sp
                     .position-absolute
-                        h1 愛德蘭絲假髮
+                        h1 愛德蘭絲
                             br
-                            | 全球第一假髮品牌
+                            | 專業訂製假髮
                 .carousel-item(data-bs-interval="5000")  
                     .img#img-three-sp
                     .position-absolute
-                        h1 愛德蘭絲假髮
+                        h1 愛德蘭絲
                             br
-                            | 全球第一假髮品牌
+                            | 專業訂製假髮
                 .carousel-item(data-bs-interval="5000")  
                     .img#img-four-sp
                     .position-absolute
-                        h1 愛德蘭絲假髮
+                        h1 愛德蘭絲
                             br
-                            | 全球第一假髮品牌
+                            | 專業訂製假髮
         //- End sp       
         //- End FV
 
@@ -273,7 +277,7 @@ html(lang="zh-Hant-TW")
                                 .card-title 4 
                         
                         .card-body
-                            p 可以量身訂製只屬於您獨一無二的髮型
+                            p 完美的售後服務讓您隨時擁有完美造型
         //- End introduction
 
         //- comparison
@@ -295,7 +299,7 @@ html(lang="zh-Hant-TW")
                         button(type='button' data-bs-target='#intro-com' data-bs-slide-to='1' aria-label='Slide 2')
                         button(type='button' data-bs-target='#intro-com' data-bs-slide-to='2' aria-label='Slide 3') 
                         button(type='button' data-bs-target='#intro-com' data-bs-slide-to='3' aria-label='Slide 4') 
-                        button(type='button' data-bs-target='#intro-com' data-bs-slide-to='4' aria-label='Slide 5')
+                        
                        
                     .carousel-inner 
                         .carousel-item.active 
@@ -311,8 +315,7 @@ html(lang="zh-Hant-TW")
                             
                         .carousel-item 
                             img.d-block.w-100(src="source/default/comparison/4.jpg", alt="使用前後對比照-4")
-                        .carousel-item 
-                            img.d-block.w-100(src="source/default/comparison/5.jpg", alt="使用前後對比照-5")
+                        
                             
                     button.carousel-control-prev(type='button' data-bs-target='#intro-com' data-bs-slide='prev')
                         span.carousel-control-prev-icon(aria-hidden='true')

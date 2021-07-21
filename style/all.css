@@ -5,7 +5,6 @@
 * Copyright 2011-2021 Twitter, Inc.
 * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
 */
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap");
 :root {
   --bs-blue:#0d6efd;
   --bs-indigo:#6610f2;
@@ -12301,7 +12300,7 @@ textarea.form-control-lg {
 }
 
 html, body {
-  font-family: "Roboto", sans-serif, "Noto Sans JP", sans-serif, "Noto Serif JP", serif;
+  font-family: "Roboto", sans-serif, "Noto Sans TC", sans-serif, "Noto Serif TC", serif;
 }
 
 a, ul, li {
@@ -12337,6 +12336,7 @@ nav .container ul li a {
   padding: 15px 15px;
   display: block;
   color: #000;
+  font-family: "Noto Sans TC", sans-serif;
 }
 nav .container ul li a:hover {
   color: #ff6f6f;
@@ -12347,7 +12347,7 @@ nav .container ul li.signup-pc {
 }
 nav .container ul li.signup-pc a {
   color: white;
-  padding: 15px 25px;
+  padding: 10px 20px;
   background-color: red;
 }
 nav .container ul li.signup-pc a:hover {
@@ -12468,7 +12468,7 @@ nav.top {
   border: 1px solid #f2f2f2;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "Noto Sans TC", sans-serif;
 }
 .mobile-menu a:hover {
   color: white;
@@ -12702,8 +12702,8 @@ section.jumbotron .carousel-inner .carousel-item .img {
   background-size: cover;
   background-position: left top;
   height: 85vh;
-  min-height: 600px;
-  max-height: 800px;
+  min-height: 700px;
+  max-height: 900px;
 }
 section.jumbotron .carousel-inner .carousel-item #img-one-pc {
   background-image: url(../source/default/fv/1.jpg);
@@ -12735,7 +12735,7 @@ section.jumbotron .carousel-inner .carousel-item .position-absolute h1 {
   line-height: 1.8;
   letter-spacing: 5px;
   font-size: 50px;
-  font-family: "Noto Serif JP", sans-serif;
+  font-family: "Noto Serif TC", sans-serif;
   font-weight: bold;
 }
 @media (max-width: 1200px) {
@@ -12745,13 +12745,13 @@ section.jumbotron .carousel-inner .carousel-item .position-absolute h1 {
 }
 
 section.jumbotron.d-lg-none .carousel-inner .carousel-item .img {
-  height: 600px;
+  height: 750px;
   min-height: auto;
   background-position: left 52px;
 }
 @media (max-width: 576px) {
   section.jumbotron.d-lg-none .carousel-inner .carousel-item .img {
-    height: 400px;
+    height: 480px;
   }
 }
 section.jumbotron.d-lg-none .carousel-inner .carousel-item #img-one-sp {
@@ -12811,7 +12811,7 @@ section.jumbotron.d-lg-none .carousel-inner .carousel-item .position-absolute h1
 section#introduction h2 {
   margin-bottom: 20px;
   letter-spacing: 5px;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "Noto Sans TC", sans-serif;
   font-weight: bold;
 }
 @media (max-width: 992px) {
@@ -12842,7 +12842,7 @@ section#introduction .intro {
 }
 section#introduction .intro .title h3 {
   font-size: 40px;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "Noto Sans TC", sans-serif;
   font-weight: bold;
 }
 @media (max-width: 992px) {
@@ -12896,8 +12896,8 @@ section#introduction .intro p {
   line-height: 2;
   color: #464646;
   white-space: pre-wrap;
-  font-family: "Roboto", sans-serif;
-  font-weight: light;
+  font-family: "Roboto", sans-serif, "Noto Sans TC", sans-serif;
+  font-weight: 300;
 }
 @media (max-width: 992px) {
   section#introduction .intro p {
@@ -13010,6 +13010,7 @@ section#introduction .img-carousel .carousel#intro-wig .carousel-inner .carousel
   font-size: 30px;
   letter-spacing: 5px;
   color: #464646;
+  font-family: "Noto Sans TC", sans-serif;
 }
 @media (max-width: 992px) {
   section#introduction .img-carousel .carousel#intro-wig .carousel-inner .carousel-item h4, section#introduction .img-carousel .carousel#intro-com .carousel-inner .carousel-item h4 {
@@ -13041,6 +13042,7 @@ section#introduction .img-carousel .carousel#intro-wig .carousel-inner .carousel
           transition-duration: 0.3s;
   line-height: 2;
   text-align: left;
+  font-family: "Noto Sans TC", sans-serif;
 }
 @media (max-width: 992px) {
   section#introduction .img-carousel .carousel#intro-wig .carousel-inner .carousel-item .carousel-caption, section#introduction .img-carousel .carousel#intro-com .carousel-inner .carousel-item .carousel-caption {
@@ -13229,10 +13231,10 @@ section#introduction .icon-card .d-flex .card .card-body:hover {
 }
 section#introduction .icon-card .d-flex .card .card-body p {
   color: white;
-  font-weight: light;
-  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 300;
+  font-family: "Noto Sans TC", sans-serif;
   font-size: 20px;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   line-height: 45px;
   margin-bottom: 0;
   width: 360px;
@@ -13307,7 +13309,7 @@ section#comparison .intro {
 }
 section#comparison .intro .title h3 {
   font-size: 40px;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "Noto Sans TC", sans-serif;
   font-weight: bold;
 }
 @media (max-width: 992px) {
@@ -13361,8 +13363,8 @@ section#comparison .intro p {
   line-height: 2;
   color: #464646;
   white-space: pre-wrap;
-  font-family: "Roboto", sans-serif;
-  font-weight: light;
+  font-family: "Roboto", sans-serif, "Noto Sans TC", sans-serif;
+  font-weight: 300;
 }
 @media (max-width: 992px) {
   section#comparison .intro p {
@@ -13470,6 +13472,7 @@ section#comparison .img-carousel .carousel#intro-wig .carousel-inner .carousel-i
   font-size: 30px;
   letter-spacing: 5px;
   color: #464646;
+  font-family: "Noto Sans TC", sans-serif;
 }
 @media (max-width: 992px) {
   section#comparison .img-carousel .carousel#intro-wig .carousel-inner .carousel-item h4, section#comparison .img-carousel .carousel#intro-com .carousel-inner .carousel-item h4 {
@@ -13501,6 +13504,7 @@ section#comparison .img-carousel .carousel#intro-wig .carousel-inner .carousel-i
           transition-duration: 0.3s;
   line-height: 2;
   text-align: left;
+  font-family: "Noto Sans TC", sans-serif;
 }
 @media (max-width: 992px) {
   section#comparison .img-carousel .carousel#intro-wig .carousel-inner .carousel-item .carousel-caption, section#comparison .img-carousel .carousel#intro-com .carousel-inner .carousel-item .carousel-caption {
@@ -13586,7 +13590,7 @@ section#questionAnswer .intro {
 }
 section#questionAnswer .intro .title h3 {
   font-size: 40px;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "Noto Sans TC", sans-serif;
   font-weight: bold;
 }
 @media (max-width: 992px) {
@@ -13640,8 +13644,8 @@ section#questionAnswer .intro p {
   line-height: 2;
   color: #464646;
   white-space: pre-wrap;
-  font-family: "Roboto", sans-serif;
-  font-weight: light;
+  font-family: "Roboto", sans-serif, "Noto Sans TC", sans-serif;
+  font-weight: 300;
 }
 @media (max-width: 992px) {
   section#questionAnswer .intro p {
@@ -13698,7 +13702,7 @@ section#questionAnswer .accordion .accordion-item h3 button {
   font-weight: 500;
   background-color: #F0F0F0;
   color: #303030;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "Noto Sans TC", sans-serif;
 }
 section#questionAnswer .accordion .accordion-item h3 button:after {
   background-size: 30px;
@@ -13741,6 +13745,7 @@ section#questionAnswer .accordion .accordion-collapse .accordion-body {
   line-height: 55px;
   color: #a4a4a4;
   letter-spacing: 1px;
+  font-family: "Noto Sans TC", sans-serif;
 }
 @media (max-width: 768px) {
   section#questionAnswer .accordion .accordion-collapse .accordion-body {
@@ -13798,7 +13803,7 @@ section#customize .intro {
 }
 section#customize .intro .title h3 {
   font-size: 40px;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "Noto Sans TC", sans-serif;
   font-weight: bold;
 }
 @media (max-width: 992px) {
@@ -13852,8 +13857,8 @@ section#customize .intro p {
   line-height: 2;
   color: #464646;
   white-space: pre-wrap;
-  font-family: "Roboto", sans-serif;
-  font-weight: light;
+  font-family: "Roboto", sans-serif, "Noto Sans TC", sans-serif;
+  font-weight: 300;
 }
 @media (max-width: 992px) {
   section#customize .intro p {
@@ -13928,14 +13933,14 @@ section#customize .d-flex.justify-content-center .d-flex .d-block {
 section#customize .d-flex.justify-content-center .d-flex .d-block h3 {
   font-size: 30px;
   font-weight: bold;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "Noto Sans TC", sans-serif;
 }
 section#customize .d-flex.justify-content-center .d-flex .d-block p {
   margin-top: 20px;
   font-size: 22px;
   line-height: 40px;
   color: #464646;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "Noto Sans TC", sans-serif;
   font-weight: 300;
 }
 @media (max-width: 992px) {
@@ -13982,7 +13987,7 @@ footer {
   margin-top: 150px;
   background-color: #141414;
   padding-top: 100px;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "Noto Sans TC", sans-serif;
 }
 @media (max-width: 992px) {
   footer {
@@ -14000,10 +14005,12 @@ footer .container h4 {
   color: white;
   letter-spacing: 1.1px;
   font-size: 20px;
+  font-family: "Noto Sans TC", sans-serif;
 }
 footer .container a {
   color: white;
-  font-weight: light;
+  font-weight: 300;
+  font-family: "Noto Sans TC", sans-serif;
 }
 footer .container ul {
   padding-left: 0;
@@ -14073,10 +14080,11 @@ footer .container .footer_content .footer_list .contact {
 footer .container .footer_content .footer_list .contact h4 {
   text-align: center;
   letter-spacing: 2px;
+  font-family: "Noto Sans TC", sans-serif;
 }
 footer .container .footer_content .footer_list .contact a {
   text-align: center;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "Noto Sans TC", sans-serif;
   font-weight: 300;
 }
 footer .container .footer_content .footer_list .contact a:hover {
@@ -14104,9 +14112,13 @@ footer .container .footer_content .footer_list hr {
   background-color: #fff;
   margin: 40px 0;
 }
+footer .container .footer_content .nav-map h4 {
+  font-family: "Noto Sans TC", sans-serif;
+}
 footer .container .footer_content .nav-map ul li a {
   padding: 5px 0px;
   display: block;
+  font-family: "Noto Sans TC", sans-serif;
 }
 footer .container .footer_content .nav-map ul li a:hover {
   color: #ff6f6f;
@@ -14142,10 +14154,14 @@ footer .container .footer_content .nav-map ul li a:hover {
     font-size: 16px;
   }
 }
+footer .container .footer_content .store h4 {
+  font-family: "Noto Sans TC", sans-serif;
+}
 footer .container .footer_content .store ul li a {
   color: white;
   padding: 5px 0;
   display: block;
+  font-family: "Noto Sans TC", sans-serif;
 }
 footer .container .footer_content .store ul li a:hover {
   color: #ff6f6f;
@@ -14184,6 +14200,12 @@ footer .copyright {
   color: white;
   padding: 120px 0 20px;
   font-weight: 300;
+  font-family: "Noto Sans TC", sans-serif;
+}
+@media (max-width: 576px) {
+  footer .copyright {
+    font-size: 13px;
+  }
 }
 
 .reservation_btn {
