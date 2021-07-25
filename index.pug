@@ -71,7 +71,8 @@ html(lang="zh-Hant-TW")
 
                     li 
                         a.nav-btn(href="#questionAnswer" title="常見問題") 常見問題
-                    
+                    li 
+                        a.nav-btn(href="https://www.aderanstaiwan.com.tw/shop/" title="立即查詢最近店舖" target="_blank") 查詢店舖
                     li.signup-pc
                         a.rounded-pill.nav-btn(href="https://www.aderanstaiwan.com.tw/reservation_form/" target="_blank" title="立即報名預約體驗") 立即預約    
                 .mobile-menu-btn.d-lg-none
@@ -82,6 +83,9 @@ html(lang="zh-Hant-TW")
                 a.w-100.d-block.text-center(href="#introduction" title="假髮介紹") 假髮介紹
                 a.w-100.d-block.text-center(href="#comparison" title="使用前後對比照") 使用前後對比照
                 a.w-100.d-block.text-center(href="#questionAnswer" title="常見問題") 常見問題
+
+                a.w-100.d-md-block.d-none.text-center(href="https://www.aderanstaiwan.com.tw/shop/" title="立即查詢最近店舖" target="_blank") 查詢店舖
+                a.w-100.d-block.d-md-none.text-center(href="https://www.aderanstaiwan.com.tw/sp/shop/" title="立即查詢最近店舖" target="_blank") 查詢店舖
                 a.w-100.d-md-block.d-none.text-center.signup-sp(href="https://www.aderanstaiwan.com.tw/reservation_form/" target="_blank" title="立即報名體驗預約") 立即預約
                 a.w-100.d-block.d-md-none.text-center.signup-sp(href="https://www.aderanstaiwan.com.tw/sp/reservation_form/" target="_blank" title="立即報名體驗預約") 立即預約
                 
@@ -398,14 +402,12 @@ html(lang="zh-Hant-TW")
         
         
         //- footer
-        footer
+        footer#footer
             .container
-                .row.footer_content.justify-content-between
+                .row.footer_content.justify-content-evenly
                     .footer_list.col-lg-3
-                        a.img.d-none.d-md-inline(href="https://www.aderanstaiwan.com.tw/" target="_blank" title="前往 愛德蘭絲 台灣官網") 
-                            img(src="source/logo/index_logo.png", alt="愛德蘭斯專業假髮") 
-                        a.img.d-inline.d-md-none(href="https://www.aderanstaiwan.com.tw/sp/" target="_blank" title="前往 愛德蘭絲 台灣官網") 
-                            img(src="source/logo/index_logo.png", alt="愛德蘭斯專業假髮") 
+                        img.d-block.mx-auto(src="source/logo/index_logo.png", alt="愛德蘭斯專業假髮") 
+                        
                         ul.social.w-100.d-flex
                             li
                                 a(href="https://www.facebook.com/Aderanstaiwan/" target="_blank" title="愛德蘭絲Facebook官方帳號").fab.fa-facebook-f
@@ -419,7 +421,7 @@ html(lang="zh-Hant-TW")
                             h4 聯絡我們
                             a.d-block(href="tel:0800-000-119" title="歡迎來電詢問") 預約電話 0800-000-119
                         hr.d-lg-none.d-block
-                    .footer_list.col-lg-3.offset-lg-1.nav-map
+                    .footer_list.col-lg-4.offset-lg-1.nav-map
                         h4 網站地圖
                         ul
                             li
@@ -430,20 +432,24 @@ html(lang="zh-Hant-TW")
                                 a(href="#comparison" title="使用前後對比照") 使用前後對比照
                             li
                                 a(href="#questionAnswer" title="常見問題") 常見問題
-                        hr.d-lg-none.d-block
-                    .footer_list.col-lg-5.store
-                        h4 沙龍店鋪一覽
-                        ul
-                            li
-                                a(href="https://goo.gl/maps/rcKHv65zE8yMxdm47" target="_blank" title="查看 台北總店 位置") 台北總店｜台北市館前路43號3樓
-                            li
-                                a(href="https://goo.gl/maps/ZbRiXdasE4LTvEfK9" target="_blank" title="查看 台北忠孝店 位置") 台北忠孝店｜台北市忠孝東路四段130號4樓
-                            li
-                                a(href="https://goo.gl/maps/zKhgd82yyBcMH4tk8" target="_blank" title="查看 新竹Big City館 位置") 新竹Big City館｜新竹市中央路239號
-                            li
-                                a(href="https://goo.gl/maps/6LJrodMMvs6fKTJ77" target="_blank" title="查看 台中旗艦店 位置") 台中旗艦店｜台中市西區台灣大道二段458－1號
-                            li
-                                a(href="https://goo.gl/maps/9TykMTUzjDkb27pr7" target="_blank" title="查看 高雄店 位置") 高雄店｜高雄市左營區博愛三路18號
+                            li 
+                                a.d-none.d-md-block(href="https://www.aderanstaiwan.com.tw/shop/" title="立即查詢最近店鋪" target="_blank") 查詢店舖 
+                            li 
+                                a.d-block.d-md-none(href="https://www.aderanstaiwan.com.tw/sp/shop/" title="立即查詢最近店鋪" target="_blank") 查詢店舖 
+                        //- hr.d-lg-none.d-block
+                    //- .footer_list.col-lg-5.store
+                    //-     h4 沙龍店鋪一覽
+                    //-     ul
+                    //-         li
+                    //-             a(href="https://goo.gl/maps/rcKHv65zE8yMxdm47" target="_blank" title="查看 台北總店 位置") 台北總店｜台北市館前路43號3樓
+                    //-         li
+                    //-             a(href="https://goo.gl/maps/ZbRiXdasE4LTvEfK9" target="_blank" title="查看 台北忠孝店 位置") 台北忠孝店｜台北市忠孝東路四段130號4樓
+                    //-         li
+                    //-             a(href="https://goo.gl/maps/zKhgd82yyBcMH4tk8" target="_blank" title="查看 新竹Big City館 位置") 新竹Big City館｜新竹市中央路239號
+                    //-         li
+                    //-             a(href="https://goo.gl/maps/6LJrodMMvs6fKTJ77" target="_blank" title="查看 台中旗艦店 位置") 台中旗艦店｜台中市西區台灣大道二段458－1號
+                    //-         li
+                    //-             a(href="https://goo.gl/maps/9TykMTUzjDkb27pr7" target="_blank" title="查看 高雄店 位置") 高雄店｜高雄市左營區博愛三路18號
 
                             
                     
